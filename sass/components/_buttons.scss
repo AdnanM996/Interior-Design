@@ -1,0 +1,38 @@
+.button {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: .2rem 1rem .5rem 0rem rgba(0,0,0,0.35);
+    }
+
+    &:active {
+        transform: translateY(-.3rem);
+        box-shadow: .2rem 1rem .5rem 0rem rgba(0,0,0,0.75);
+    }
+
+    &__black {
+        background-color: #0a0a0a;
+        color: $color-primary;
+        margin: 0 auto;
+    }
+
+    &__empty {
+        background-color: $color-primary;
+        border: .1rem solid $color-secondary;
+        color: $color-secondary;
+    }
+}
+
+.submit {
+    @extend .button;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5rem 5rem;
+}

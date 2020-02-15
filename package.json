@@ -1,0 +1,14 @@
+{
+  "name": "interior-design",
+  "version": "1.0.0",
+  "description": "Interior design website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Adnan M",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

@@ -1,0 +1,20 @@
+.services {
+    margin-top: 11.6rem;
+
+}
+
+.bestPrice {
+    background-color: $color-black;
+    padding: 5rem 0rem;
+    margin-bottom: 5rem;
+
+    &__text {
+        color: $color-primary;
+        margin: 0;
+    }
+
+    & .wrapper {
+        flex-direction: row;
+        width: 50%;
+    }
+}

@@ -1,0 +1,43 @@
+.header__nav {
+    display: flex;
+
+    & ul {
+        display: flex;
+        list-style: none;
+    }
+
+    & li {
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    &--link {
+        display: block;
+        transition: all .3s ease;
+        display: block;
+        text-decoration: none;
+        color: $color-secondary;
+        line-height: 1.5;
+
+        &:hover {
+            color: #181818;
+        }
+    }
+
+    &--active {
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            background-color: gold;
+            height: .1rem;
+            width: 100%;
+        }
+    }
+}

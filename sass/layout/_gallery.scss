@@ -1,0 +1,10 @@
+.work {
+    padding: 10rem 0;
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}

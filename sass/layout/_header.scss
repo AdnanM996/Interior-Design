@@ -1,0 +1,23 @@
+.header {
+    padding: 4.5rem 0rem;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+
+    & .wrapper {
+        flex-direction: row;
+    }
+
+    &__logo {
+        &:link,
+        &:active,
+        &:visited,
+        &:hover {
+            display: inline-block;
+            text-decoration: none;
+            color: gold;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $color-primary;
+    color: $color-secondary;
+    padding: 3rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+.round__img {
+    
+}
+
+::placeholder {
+    color: $color-white;
+    margin-left: -.1rem;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    @include flexLrg;
+}
+
+.fade {
+    animation: fade 1.5s ease;
+}
+
+.line {
+    display: inline-block;
+    background-color: $color-secondary;
+    height: .2rem;
+    width: 10rem;
+    border-radius: 10rem;
+}
